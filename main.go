@@ -104,5 +104,8 @@ func main() {
 	r.HandleFunc("/books/{id}", deleteBook).Methods("DELETE")
 
 	// Start server
+	log.Println("Server Started")
+	log.Println("Server Listening...")
 	log.Fatal(http.ListenAndServe(":8000", r))
+
 }
